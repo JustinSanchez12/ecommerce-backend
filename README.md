@@ -9,7 +9,7 @@ The objective of this project is to build the back end for an e-commerce site us
 - Node.js
 - MySQL
 
-# Testing
+## Testing
 ![alt text](images/screenshot2.PNG)
 
 GET all items in the categories group
@@ -25,3 +25,6 @@ CREATE an item in category
 ![alt text](images/screenshot1.PNG)
 
 Terminal showing the UPDATE, CREATE, and DELETE
+
+## Live Demo
+[Click Here](https://drive.google.com/file/d/1cB_kP63xmzBDiBdq7CFuuKf87L5BJInO/view)
