@@ -26,16 +26,16 @@ router.get('/:id', (req, res) => {
 
 router.post('/', (req, res) => {
   // create a new category
-  Category.create([
-    {
-      category_name: 'Underwear'
-    },
-    {
-      category_name: 'Graphic T-Shirts'
-    },
-  ]) .then(()=>{
-    res.send('Seeding Success');
-  })
+  const categoryData = {
+    category_name: req.body.category_name
+  };
+
+  Category.create(categoryData)
+    .then((newCategory) => {
+      res.status(200).json(newCategory);
+    }) .catch((err) => {
+      res.status(500).json(err);
+    });
 });
 
 router.put('/:id', (req, res) => {
